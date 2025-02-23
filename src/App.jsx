@@ -5,7 +5,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/WattZAP-Chat' element={<Chat />} />
+        <Route path='/wattzap-chat' element={<Chat />} />
       </Routes>
     </Router>
   );
