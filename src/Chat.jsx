@@ -15,7 +15,7 @@ function Chat() {
   const [conectadoBroker, setConectadoBroker] = useState(false)
 
   useEffect(() => {
-    const client = mqtt.connect('ws://broker.hivemq.com:8000/mqtt')
+    const client = mqtt.connect('wss://broker.hivemq.com:8884/mqtt')
     client.on('connect', () => {
       console.log('Conectado ao broker...')
       setConectadoBroker(true)
