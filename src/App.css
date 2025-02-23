@@ -1,0 +1,155 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+}
+
+.mainChatContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #b3e5fc;
+}
+
+
+.logoWatt {
+  margin-left: 1rem;
+  width: 2rem;
+}
+
+.fonteLogo {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.966);
+}
+
+.userInfoBox {
+  position: absolute;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  flex-direction: row;
+  right: 0.8rem;
+}
+
+.barraSuperior {
+  width: 100%;
+  height: 5vh;
+  background-color: #0288d1;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: fixed;
+  top: 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.2em;
+}
+
+.nameImageBox {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.2rem;
+  gap: 0.3rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.messageText {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  max-width: 90%;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  margin-left: 1rem;
+  margin-bottom: 1.4rem;
+  align-items: flex-start;
+  justify-content: left;
+  color: white;
+  width: 100%;
+  height: fit-content;
+}
+
+.messagesContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: rgb(56, 56, 56);
+  width: 100%;
+  height: calc(100vh - 13vh);
+  overflow-y: auto;
+  padding-top: 5vh; 
+  padding-bottom: 8vh;
+}
+
+.messagesContainer::-webkit-scrollbar {
+  width: 10px;
+}
+.messagesContainer::-webkit-scrollbar-track {
+  background: #eaeaea;
+  border-radius: 10px;
+}
+.messagesContainer::-webkit-scrollbar-thumb {
+  background: #525256;
+  border-radius: 10px;
+}
+.messagesContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.chatInputContainer {
+  width: 100%;
+  height: 8vh;
+  background-color: #0277bd;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: fixed;
+  
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  gap: -0.3rem;
+  font-size: 1em;
+}
+
+.chatInput {
+  width: 74%;
+  height: 3.8vh;
+  border-radius: 20px;
+  border-width: 2px;
+  box-shadow: inset 2px rgb(0, 0, 0);
+  border-color: rgba(15, 15, 15, 0.445);
+  text-align: start;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.1rem;
+  background-color: white;
+}
+
+.sendButton {
+  background-color: transparent;
+  border: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 50px;
+  height: 50px;
+}
